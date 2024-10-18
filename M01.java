@@ -9,7 +9,7 @@ public class M01 {
     public static void main(String[] args) {
         double performa, nilai, a, aB, b, bC, c, d, e;
         double kredit1;
-        String nilai1, kredit;
+        int nilai1, kredit;
 
         kredit1 = 0;
         a = 4.0;
@@ -19,33 +19,32 @@ public class M01 {
         c = 2.0;
         d = 1.0;
         e = 0.0;
-        kredit = input.nextLine();
-        if (kredit.equals("---")) {
+        if (kredit == "---") {
             kredit = kredit;
         } else {
             kredit1 = Integer.parseDouble(kredit);
         }
-        nilai1 = input.nextLine();
-        while (!nilai1.equals("---")) {
-            if (nilai1.equals("A")) {
+        nilai1 = Integer.parseInt(input.nextLine());
+        while (nilai1 != "---") {
+            if (nilai1 == "A") {
                 nilai = 4.0;
             } else {
-                if (nilai1.equals("AB")) {
+                if (nilai1 == "AB") {
                     nilai = 3.5;
                 } else {
-                    if (nilai1.equals("B")) {
+                    if (nilai1 == "B") {
                         nilai = 3.0;
                     } else {
-                        if (nilai1.equals("BC")) {
+                        if (nilai1 == "BC") {
                             nilai = 2.5;
                         } else {
-                            if (nilai1.equals("C")) {
+                            if (nilai1 == "C") {
                                 nilai = 2.0;
                             } else {
-                                if (nilai1.equals("D")) {
+                                if (nilai1 == "D") {
                                     nilai = 1.0;
                                 } else {
-                                    if (nilai1.equals("E")) {
+                                    if (nilai1 == "E") {
                                         nilai = 0.0;
                                     } else {
                                         nilai = 0.0;
@@ -58,13 +57,12 @@ public class M01 {
             }
             performa = kredit1 * nilai;
             System.out.println(toFixed(performa,1));
-            kredit = input.nextLine();
-            if (kredit.equals("---")) {
+            if (kredit == "---") {
                 kredit = kredit;
             } else {
                 kredit1 = Integer.parseDouble(kredit);
             }
-            nilai1 = input.nextLine();
+            nilai1 = Integer.parseInt(input.nextLine());
         }
     }
     
