@@ -7,8 +7,9 @@ public class M01 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
+        double performa, nilai, a, aB, b, bC, c, d, e;
+        double kredit1;
         String nilai1, kredit;
-        double performa, nilai, a, aB, b, bC, c, d, e, kredit1;
 
         kredit1 = 0;
         a = 4.0;
